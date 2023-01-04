@@ -1,0 +1,94 @@
+header {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.container2 {
+  background: #dfe4e9;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  grid-gap: 1rem;
+  justify-content: space-between;
+}
+
+.column.left {
+  flex: 1;
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+}
+
+.column.right {
+  width: 20%;
+  flex: 0 0 20%;
+  padding: 10px;
+}
+
+.procedura {
+  border: 2px solid grey;
+  width: 200px;
+  height: 100px;
+  background: rgb(27, 180, 226);
+  margin: 10px 10px 0px 10px;
+  color: rgb(230, 227, 227);
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.wrapper {
+  /*flex: 1 0 clamp(100px, 200px, 300px);*/
+  position: relative;
+  text-align: left;
+}
+
+.wrapper a {
+  margin-left: 10px;
+}
+
+ul {
+  padding: 0px 20px 0px 0px;
+}
+
+li {
+  list-style: none;
+  background: green;
+  color: white;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  display: flex;
+  align-items: stretch;
+  height: 100px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+li::before {
+  content: "<";
+  flex: 0 0 50px;
+  text-align: center;
+  background: rgb(11, 132, 168);
+  border-right: 5px solid white;
+  margin-right: 10px;
+  font-size: 50px;
+  line-height: 100px;
+}
+li a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(230, 227, 227);
+  line-height: 25px;
+}
+li:hover {
+  background-color: rgb(11, 132, 168);
+}
